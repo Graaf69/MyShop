@@ -16,10 +16,10 @@ namespace MyShop.WebUI.Controllers
         IRepository<Product> context;
         IRepository<ProductCategory> productCategories;
 
-        public ProductManagerController(IRepository<Product> productContext, IRepository<ProductCategory> productCategoryContext)
+        public ProductManagerController(IRepository<Product> ProductContext, IRepository<ProductCategory> ProductCategoryContext)
         {
-            context = productContext;
-            productCategories = productCategoryContext;
+            context = ProductContext;
+            productCategories = ProductCategoryContext;
         }
 
         // GET: ProductManager
